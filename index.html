@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Jessica and Mark - June|14|2020</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link
+			href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,400i|Sacramento&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+        box-sizing: border-box;
+			}
+      a, a:visited {
+        text-decoration: underline;
+        color: rgb(141, 167, 132);
+      }
+			body {
+				font-family: "Josefin Slab", serif;
+				font-weight: 300;
+				font-size: 16px;
+        background-color: rgb(249, 249, 250);
+				text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-transform: lowercase;
+			}
+      section {
+        padding: 15px 15px;
+        max-width: 360px;
+        min-width: 360px;
+        color: rgb(112, 113, 117);
+      }
+      section:not(:last-of-type) {
+        border-bottom: 1px solid rgb(141, 167, 132);
+      }
+      section .title {
+        font-family: "Sacramento", cursive;
+        text-transform: capitalize;
+				color: rgb(141, 167, 132);
+      }
+      .intro .what {
+        margin-bottom: 15px;
+      }
+			.intro .what .invited,
+			.intro .what .of {
+				text-transform: uppercase;
+			}
+      .intro .what .of {
+        margin-top: -25px;
+      }
+			.intro .what .wedding {
+				font-family: "Sacramento", cursive;
+        text-transform: capitalize;
+				font-size: 64px;
+				color: rgb(141, 167, 132);
+        margin-top: -8px;
+			}
+			.intro .who {
+				font-size: 36px;
+        margin-bottom: 15px;
+			}
+			.intro .who .name {
+				text-transform: uppercase;
+			}
+			.intro .who .and {
+				font-family: "Sacramento", cursive;
+				color: rgb(141, 167, 132);
+        margin: -15px 0;
+			}
+      .intro .us {
+        min-width: 330px;
+        max-width: 330px;
+      }
+      .intro .when {
+        margin-bottom: 15px;
+      }
+			.intro .when .date {
+				text-transform: uppercase;
+        font-size: 12px;
+        margin-bottom: 5px;
+			}
+      .intro .when .month::after, .intro .when .year::before {
+        content: "|";
+        color: rgb(141, 167, 132);
+        margin: 0 3px;
+        font-size: 24px;
+        position: relative;
+        top: 1px;
+      }
+      .intro .when .day {
+        font-size: 24px;
+        position: relative;
+        top: 3px;
+      }
+      .intro .when .time {
+        font-style: italic;
+      }
+      .intro .where .name {
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+      .intro .where .address {
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+      .intro .where .dinner {
+        font-style: italic;
+      }
+      .schedule ul li {
+        display: flex;
+        text-align: left;
+        font-style: italic;
+      }
+      .schedule ul li:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+      .schedule .time {
+        flex-grow: 1;
+      }
+      .hotel .block {
+        font-style: italic;
+        margin-bottom: 15px;
+      }
+      .hotel ul li {
+        display: flex;
+        flex-direction: column;
+        font-style: italic;
+      }
+      .hotel ul li:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+      .hotel .name {
+        text-transform: uppercase;
+        font-style: normal;
+        margin-bottom: 5px;
+      }
+      .hotel .address, .hotel .shuttle {
+        margin-bottom: 5px;
+      }
+      .registry .soon {
+        font-style: italic;
+      }
+      .contact .questions {
+        font-style: italic;
+      }
+		</style>
+	</head>
+	<body>
+		<section class="intro">
+			<div class="what">
+				<p class="invited">You are invited to the</p>
+				<p class="wedding">Wedding</p>
+				<p class="of">of</p>
+			</div>
+			<div class="who">
+				<p class="name">Jessica Quickle</p>
+				<p class="and">and</p>
+				<p class="name">Mark Fielbig</p>
+      </div>
+      <img class="us" src="us.png">
+			<div class="when">
+				<p class="date">
+					<span class="month">June</span></span
+					><span class="day">14</span></span
+					><span class="year">2020</span>
+				</p>
+				<p class="time">Twelve o'clock in the afternoon</p>
+			</div>
+			<div class="where">
+				<p class="name"><a href="https://www.grandviewevents.com/">The Grandview</a></p>
+        <p class="address">176 Rinaldi Boulevard, Poughkeepsie, NY</p>
+        <p class="dinner">Dinner & dancing to follow</p>
+			</div>
+    </section>
+    <section class="schedule">
+      <h2 class="title">Schedule</h2>
+      <ul>
+        <li>
+          <span class="time">Twelve o'clock</span>
+          <span class="event">Welcome drinks</span>
+        </li>
+        <li>
+          <span class="time">Twelve thirty</span>
+          <span class="event">Ceremony</span>
+        </li>
+        <li>
+          <span class="time">One o'clock</span>
+          <span class="event">Cocktail hour</span>
+        </li>
+        <li>
+          <span class="time">Two o'clock</span>
+          <span class="event">Dinner & dancing</span>
+        </li>
+        <li>
+          <span class="time">Six o'clock</span>
+          <span class="event">Commencement</span>
+        </li>
+      </ul>
+    </section>
+    <section class="hotel">
+      <h2 class="title">Hotels</h2>
+      <p class="block">Hotel room blocks are available at</p>
+      <ul>
+        <li>
+          <p class="name"><a href="https://www.pokgrand.com/">The Poughkeepsie Grand Hotel</a></p>
+          <p class="address">40 Civic Center Plaza, Poughkeepsie, NY</p>
+          <p class="shuttle">10 minute shuttle to & from venue</p>
+          <p class="price">$189 per night</p>
+        </li>
+        <li>
+          <p class="name"><a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/poughkeepsie/pouny/hoteldetail">Holiday Inn Express Poughkeepsie</a></p>
+          <p class="address">2750 South Rd, Poughkeepsie, NY</p>
+          <p class="shuttle">10 minute shuttle to & from venue</p>
+          <p class="price">$139 per night</p>
+        </li>
+      </ul>
+    </section>
+    <section class="registry">
+      <h2 class="title">Registry</h2>
+      <p class="soon">Coming soon</p>
+    </section>
+    <section class="contact">
+      <h2 class="title">Questions</h2>
+      <p class="questions">Email us at <a href="mailto:info@thebigquickwedding.com">info@thebigquickwedding.com</a></p>
+    </section>
+	</body>
+</html>
